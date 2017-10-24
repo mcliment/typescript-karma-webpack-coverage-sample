@@ -1,4 +1,4 @@
-# Webpack + Karma + Typescript + Coverage :sparkles:
+#  Typescript + Karma + Webpack + Coverage :sparkles:
 
 The most basic example I can think of a Typescript project with Webpack + Karma + full coverage
 
