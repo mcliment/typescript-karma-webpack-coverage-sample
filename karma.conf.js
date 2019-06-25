@@ -22,7 +22,7 @@ module.exports = (config) => {
       noInfo: true
     },
     coverageIstanbulReporter: {
-      reports: [ 'html', 'text-summary' ],
+      reports: [ 'html', 'text-summary', 'lcovonly' ],
       dir: path.join(__dirname, 'coverage'),
       fixWebpackSourcePaths: true,
       'report-config': {

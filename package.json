@@ -5,14 +5,16 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "test": "karma start karma.conf.js --single-run"
+    "test": "karma start karma.conf.js --single-run",
+    "codecov": "cat coverage/lcov.info | codecov"
   },
   "author": "",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "@types/chai": "^4.1.7",
     "@types/mocha": "^5.2.7",
     "chai": "^4.2.0",
+    "codecov": "^3.5.0",
     "istanbul-instrumenter-loader": "^3.0.1",
     "karma": "^4.1.0",
     "karma-coverage-istanbul-reporter": "^2.0.5",
