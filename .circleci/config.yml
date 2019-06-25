@@ -1,0 +1,21 @@
+version: 2
+jobs:
+  install:
+    docker:
+      image: circleci/node:lts-browsers
+    steps:
+      - checkout
+      - run: npm install
+  test:
+    docker:
+      image: circleci/node:lts-browsers
+    steps:
+      - checkout
+      - run: npm test
+
+workflows:
+  version: 2
+  test:
+    jobs:
+      - install
+      - test
