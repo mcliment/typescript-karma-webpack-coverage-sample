@@ -1,5 +1,8 @@
 #  Typescript + Karma + Webpack + Coverage :sparkles:
 
+[![CircleCI](https://circleci.com/gh/mcliment/typescript-karma-webpack-coverage-sample.svg?style=svg)](https://circleci.com/gh/mcliment/typescript-karma-webpack-coverage-sample)
+[![codecov](https://codecov.io/gh/mcliment/typescript-karma-webpack-coverage-sample/branch/master/graph/badge.svg)](https://codecov.io/gh/mcliment/typescript-karma-webpack-coverage-sample)
+
 The most basic example I can think of a Typescript project with Webpack + Karma + full coverage
 
 ## Motivation :muscle:
