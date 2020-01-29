@@ -12,7 +12,7 @@
   "license": "MIT",
   "devDependencies": {
     "@types/chai": "^4.2.7",
-    "@types/mocha": "^5.2.7",
+    "@types/mocha": "^7.0.0",
     "chai": "^4.2.0",
     "codecov": "^3.6.1",
     "istanbul-instrumenter-loader": "^3.0.1",
