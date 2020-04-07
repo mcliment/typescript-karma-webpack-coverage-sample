@@ -14,7 +14,7 @@
     "@types/chai": "^4.2.7",
     "@types/mocha": "^7.0.0",
     "chai": "^4.2.0",
-    "codecov": "^3.6.1",
+    "codecov": "^3.6.5",
     "istanbul-instrumenter-loader": "^3.0.1",
     "karma": "^4.4.1",
     "karma-coverage-istanbul-reporter": "^2.1.1",
