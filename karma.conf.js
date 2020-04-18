@@ -1,12 +1,15 @@
 const webpackConfig = require("./webpack.config");
 const path = require('path');
 
+const puppeteer = require('puppeteer');
+process.env.CHROME_BIN = puppeteer.executablePath();
+
 delete webpackConfig.entry
 
 module.exports = (config) => {
   config.set({
-    browsers: ["PhantomJS"],
-    frameworks: ["mocha", "sinon-chai", "phantomjs-shim"],
+    browsers: ["ChromeHeadless"],
+    frameworks: ["mocha", "sinon-chai"],
     reporters: ["spec", 'coverage-istanbul'],
     files: [
       "test/index.ts"
