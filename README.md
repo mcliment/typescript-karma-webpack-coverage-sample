@@ -2,7 +2,7 @@
 
 [![CircleCI](https://circleci.com/gh/mcliment/typescript-karma-webpack-coverage-sample.svg?style=svg)](https://circleci.com/gh/mcliment/typescript-karma-webpack-coverage-sample)
 ![Node.js CI](https://github.com/mcliment/typescript-karma-webpack-coverage-sample/workflows/Node.js%20CI/badge.svg)
-[![codecov](https://codecov.io/gh/mcliment/typescript-karma-webpack-coverage-sample/branch/master/graph/badge.svg)](https://codecov.io/gh/mcliment/typescript-karma-webpack-coverage-sample) [![Greenkeeper badge](https://badges.greenkeeper.io/mcliment/typescript-karma-webpack-coverage-sample.svg)](https://greenkeeper.io/)
+[![codecov](https://codecov.io/gh/mcliment/typescript-karma-webpack-coverage-sample/branch/master/graph/badge.svg)](https://codecov.io/gh/mcliment/typescript-karma-webpack-coverage-sample) [![Known Vulnerabilities](https://snyk.io/test/github/mcliment/typescript-karma-webpack-coverage-sample/badge.svg?targetFile=package.json)](https://snyk.io/test/github/mcliment/typescript-karma-webpack-coverage-sample?targetFile=package.json)
 
 The most basic example I can think of a Typescript project with Webpack + Karma + full coverage
 
