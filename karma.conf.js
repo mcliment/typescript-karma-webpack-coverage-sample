@@ -9,7 +9,7 @@ delete webpackConfig.entry
 module.exports = (config) => {
   config.set({
     browsers: ["ChromeHeadless"],
-    frameworks: ["mocha", "sinon-chai"],
+    frameworks: ["mocha", "sinon-chai", "webpack"],
     reporters: ["spec", 'coverage-istanbul'],
     files: [
       "test/index.ts"
