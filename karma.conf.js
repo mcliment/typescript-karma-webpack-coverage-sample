@@ -1,36 +1,27 @@
 const webpackConfig = require("./webpack.config");
-const path = require('path');
 
-const puppeteer = require('puppeteer');
-process.env.CHROME_BIN = puppeteer.executablePath();
-
-delete webpackConfig.entry
-
-module.exports = (config) => {
+module.exports = function(config) {
   config.set({
-    browsers: ["ChromeHeadless"],
-    frameworks: ["mocha", "sinon-chai", "webpack"],
-    reporters: ["spec", 'coverage-istanbul'],
+    browsers: ['ChromeHeadless'],
+    frameworks: ['mocha', 'webpack'],
+    reporters: ['progress', 'coverage'],
     files: [
-      "test/index.ts"
+      'test/index.ts'
     ],
     preprocessors: {
       "test/index.ts": ["webpack"],
     },
-    mime: {
-      "text/x-typescript": ["ts", "tsx"],
-    },
     webpack: webpackConfig,
-    webpackMiddleware: {
-      noInfo: true
+    coverageReporter: {
+      dir : 'coverage',
+      subdir: function(browser) {
+        return browser.toLowerCase().split(/[ /-]/)[0];
+      },
+      reporters: [
+        { type: 'html', subdir: 'html' },
+        { type: 'lcovonly', file: 'lcov.info' },
+        { type: 'text-summary' },
+      ]
     },
-    coverageIstanbulReporter: {
-      reports: [ 'html', 'text-summary', 'lcovonly' ],
-      dir: path.join(__dirname, 'coverage'),
-      fixWebpackSourcePaths: true,
-      'report-config': {
-        html: { outdir: 'html' }
-      }
-    }
   })
-};
+}
