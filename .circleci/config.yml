@@ -8,8 +8,8 @@ jobs:
     docker:
       - image: cimg/node:lts-browsers
     steps:
-      - checkout
       - browser-tools/install-chrome
+      - checkout
       - run: npm install
       - run: npm test
       - run: npm run codecov
