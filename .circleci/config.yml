@@ -1,8 +1,8 @@
-version: 2
+version: 2.1
 jobs:
   test:
     docker:
-      - image: circleci/node:lts-browsers
+      - image: cimg/node:lts-browsers
     steps:
       - checkout
       - run: npm install
@@ -10,7 +10,6 @@ jobs:
       - run: npm run codecov
 
 workflows:
-  version: 2
   test:
     jobs:
       - test
