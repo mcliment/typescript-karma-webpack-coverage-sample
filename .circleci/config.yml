@@ -1,16 +1,20 @@
-version: 2
+version: 2.1
+
+orbs:
+  browser-tools: circleci/browser-tools@1.1.0
+
 jobs:
   test:
     docker:
-      - image: circleci/node:lts-browsers
+      - image: cimg/node:lts-browsers
     steps:
+      - browser-tools/install-chrome
       - checkout
       - run: npm install
       - run: npm test
       - run: npm run codecov
 
 workflows:
-  version: 2
   test:
     jobs:
       - test
